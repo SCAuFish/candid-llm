@@ -36,7 +36,8 @@ chat_engine = index.as_chat_engine()
 
 while True:
     print("=========================")
-    prompt = input()
+    prompt = input("User: ")
     print("=========================")
     streaming_response = chat_engine.chat(prompt)
+    print("Agent: ")
     print(streaming_response)
